@@ -1,0 +1,81 @@
+.header {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    transition: all .3s ease;
+    z-index: 2;
+
+    &__logo {
+        
+        img {
+            width: 185px;
+            height: 74px;
+            object-fit: contain;
+            margin: 0;
+        }
+    }
+
+    &__menu {
+        /* padding-left: 6.5rem; */
+
+        ul {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+
+            li {
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        width: 850px;
+        justify-content: space-between;
+        margin-right: 50px;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+
+        i {
+            height: 16px;
+            width: 16px;
+        }
+    }
+
+    &__button {
+        width: 120px;
+        height: 47px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    &.scrolled {
+        background-color: white;
+        border-bottom: 1px #CACACA solid;
+    }
+}
