@@ -39,6 +39,9 @@ const Features = () => {
                     <div className="features__item-imgs">
                         <img src={feature2} className='features__item-principal' alt="" />
 
+                        <div className='features__item-subf2'>
+                            <img src={subf2} alt="" />
+                        </div>
                     </div>
 
                     <h2 className='features__item-title'>
