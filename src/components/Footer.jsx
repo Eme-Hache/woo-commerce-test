@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className='footer__circle' />
 
                 <h1 className='footer__title footer__title--white'>
-                    WooCommercer - the
+                    WooCommerce - the
                     <span className='footer__title footer__title--white footer__title--bold'>
                         most customizable eCommerce platform
                     </span>
