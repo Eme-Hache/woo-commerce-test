@@ -1,0 +1,110 @@
+.details {
+    margin-top: 115px;
+    position: relative;
+    display: flex;
+    height: 1110px;
+    background-image: url('../../assets/rectangle.svg');
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 300px;
+
+    @media (max-width: 1280px) {
+        height: 2150px;
+        background-position: 75% 100%;
+    }
+
+    &__container {
+        position: absolute;
+        top: -33px;
+        left: 50%;
+        width: 64%;
+        transform: translateX(-50%);
+
+        @media (max-width: 1280px) {
+            width: unset;
+        }
+    }
+
+    &__art {
+        display: flex;
+        gap: 70px;
+
+        &--first {
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        
+        &--last {
+            flex-direction: row-reverse;
+        }
+
+        @media (max-width: 1280px) {
+            flex-flow: column;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 1280px) {
+            margin: 0;
+        }
+
+        img {
+            filter: drop-shadow(-25px 20px 44px rgba(50, 31, 118, 0.4));
+            
+            @media (max-width: 1280px) {
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+    }
+
+    &__details {
+        height: fit-content;
+        padding-bottom: 20px;
+        width: fit-content;
+
+        &--first {
+            align-self: flex-end;
+        }
+        
+        &--last {
+            padding-top: 20px;
+        }
+
+        @media (max-width: 1280px) {
+            padding: 0;
+            align-self: unset;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        color: #FFFFFF;
+        max-width: 273px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin: 15px 0 40px 0;
+        max-width: 480px;
+    }
+
+    &__button {
+        width: 256px;
+        height: 64px;
+        border-radius: 60px;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+}

@@ -1,49 +1,49 @@
-import { useScroll } from '../hooks/useScroll'
+import useScroll from '../hooks/useScroll'
 import logo from '../assets/logo.png'
 
 import '../styles/components/header.scss'
 
 const Header = () => {
-    const { scrollY } = useScroll()
+    const scrollPosition = useScroll()
 
     return (
-        <header className={`${scrollY > 1 ? 'scrolled' : ''} header`}>
-            <div className='header__left'>
-                <figure className='header__logo'>
-                    <img src={logo} alt='logo' />
-                </figure>
+        <header className={`${scrollPosition > 1 ? 'header--scrolled' : ''} header`}>
+            <figure className='header__logo'>
+                <img src={logo} alt='logo' />
+            </figure>
 
+            <div className='header__actions'>
                 <nav className='header__menu'>
                     <ul>
                         <li>
-                            <a href='#'>Sell</a>
+                            <a className='header__link' href='#'>Sell</a>
                         </li>
                         <li>
-                            <a href='#'>Marketplace</a>
+                            <a className='header__link' href='#'>Marketplace</a>
                         </li>
                         <li>
-                            <a href='#'>Community</a>
+                            <a className='header__link' href='#'>Community</a>
                         </li>
                         <li>
-                            <a href='#'>Analyze</a>
+                            <a className='header__link' href='#'>Analyze</a>
                         </li>
                         <li>
-                            <a href='#'>Downloads</a>
+                            <a className='header__link' href='#'>Downloads</a>
                         </li>
                     </ul>
                 </nav>
-            </div>
 
-            <div className='header__actions'>
-                <a href='#'>
-                    Log In
-                </a>
+                <div className='header__right'>
+                    <a className='header__link' href='#'>
+                        Log In
+                    </a>
 
-                <button className='button button--purple header__button'>
-                    Get Started
-                </button>
+                    <button className='button button--purple header__button'>
+                        Get Started
+                    </button>
 
-                <i className="fa-solid fa-magnifying-glass" />
+                    <i className="fa-solid fa-magnifying-glass" />
+                </div>
             </div>
         </header>
     )

@@ -1,32 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-export function useScroll() {
-    const [lastScrollTop, setLastScrollTop] = useState(0);
-    const [bodyOffset, setBodyOffset] = useState(
-        document.body.getBoundingClientRect()
-    );
-    const [scrollY, setScrollY] = useState(bodyOffset.top);
-    const [scrollX, setScrollX] = useState(bodyOffset.left);
-    const [scrollDirection, setScrollDirection] = useState();
+export default function useScroll() {
+    const [scrollPosition, setScrollPosition] = useState(0);
 
-    const listener = e => {
-        setBodyOffset(document.body.getBoundingClientRect());
-        setScrollY(-bodyOffset.top);
-        setScrollX(bodyOffset.left);
-        setScrollDirection(lastScrollTop > -bodyOffset.top ? "down" : "up");
-        setLastScrollTop(-bodyOffset.top);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
     };
-
+    
     useEffect(() => {
-        window.addEventListener("scroll", listener);
+        window.addEventListener('scroll', handleScroll, { passive: true });
+    
         return () => {
-            window.removeEventListener("scroll", listener);
+            window.removeEventListener('scroll', handleScroll);
         };
-    });
+    }, []);
 
-    return {
-        scrollY,
-        scrollX,
-        scrollDirection
-    };
+    return scrollPosition
 }

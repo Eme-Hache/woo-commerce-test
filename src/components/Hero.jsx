@@ -14,7 +14,7 @@ const Hero = () => {
                 </h2>
 
                 <div className='hero__buttons'>
-                    <button className='button button--purple hero__button'>
+                    <button className='hero__button button button--purple'>
                         <span className='button__text'>
                             Start a New Store
                         </span>
