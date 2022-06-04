@@ -13,15 +13,15 @@ const Details = () => {
                     </div>
 
                     <div className='details__details details__details--first'>
-                        <h2 className='details__title'>
+                        <h2 className='title title--article title--white'>
                             Develop Without Limits
                         </h2>
 
-                        <p className='details__text'>
+                        <p className='text text--base text--white details__text'>
                         WooCommerce is developer friendly, too. Built with a REST API, WooCommerce is scalable and can integrate with virtually any service. Design a complex store from scratch, extend a store for a client, or simply add a single product to a WordPress site—your store, your way.
                         </p>
 
-                        <button className='button button--green details__button'>
+                        <button className='button button--green button--rounded details__button'>
                             Read the Documentation
                         </button>
                     </div>
@@ -33,15 +33,15 @@ const Details = () => {
                     </div>
 
                     <div className='details__details details__details--last'>
-                        <h2 className='details__title'>
+                        <h2 className='title title--article title--white'>
                             Know our Global Community
                         </h2>
 
-                        <p className='details__text'>
+                        <p className='text text--base text--white details__text'>
                         WooCommerce is one of the fastest-growing eCommerce communities. We’re proud that the helpfulness of the community and a wealth of online resources are frequently cited as reasons our users love it. There are 80+ meetups worldwide!
                         </p>
 
-                        <button className='button button--green details__button'>
+                        <button className='button button--green button--rounded details__button'>
                             Read the Documentation
                         </button>
                     </div>

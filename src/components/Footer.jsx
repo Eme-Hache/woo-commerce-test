@@ -14,12 +14,12 @@ import '../styles/components/footer.scss'
 const Footer = () => {
     return (
         <footer className='footer'>
-            <section>
-                <h1 className='footer__title'>
+            <section className='footer__supported'>
+                <h1 className='title title--secondary title--footer'>
                     Supported by real people
                 </h1>
 
-                <p className='footer__text'>
+                <p className='text text--base text--center footer__text'>
                     Our team of Happiness Engineers works remotely from 68 countries providing customers support across multiple time zones.
                 </p>
 
@@ -42,7 +42,7 @@ const Footer = () => {
                     </span>
                 </h1>
 
-                <button className='footer__button'>
+                <button className='button button--transparent button--rounded footer__button'>
                     GET STARTED
                 </button>
             </section>

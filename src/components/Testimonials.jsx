@@ -3,12 +3,12 @@ import '../styles/components/testimonials.scss'
 const Testimonials = () => {
     return (
         <section className='testimonials'>
-            <h2 className='testimonials__title'>Trusted by Agencies & Store Owners</h2>
+            <h2 className='title title--secondary title--testimonials'>Trusted by Agencies & Store Owners</h2>
 
             <div className='testimonials__container'>
                 <div className='testimonials__wrapper'>
                     <div className='testimonials__card testimonials__card--first'>
-                        <p className='testimonials__text'>
+                        <p className='text text--base text--large text--center'>
                             No other eCommerce platform allows people to start for free and grow their store as their business grows. More importantly, WooCommerce doesn't charge you a portion of your profits as your business grows!
                         </p>
                     </div>

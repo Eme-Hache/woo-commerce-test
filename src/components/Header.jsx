@@ -16,25 +16,25 @@ const Header = () => {
                 <nav className='header__menu'>
                     <ul>
                         <li>
-                            <a className='header__link' href='#'>Sell</a>
+                            <a className='link' href='#'>Sell</a>
                         </li>
                         <li>
-                            <a className='header__link' href='#'>Marketplace</a>
+                            <a className='link' href='#'>Marketplace</a>
                         </li>
                         <li>
-                            <a className='header__link' href='#'>Community</a>
+                            <a className='link' href='#'>Community</a>
                         </li>
                         <li>
-                            <a className='header__link' href='#'>Analyze</a>
+                            <a className='link' href='#'>Analyze</a>
                         </li>
                         <li>
-                            <a className='header__link' href='#'>Downloads</a>
+                            <a className='link' href='#'>Downloads</a>
                         </li>
                     </ul>
                 </nav>
 
                 <div className='header__right'>
-                    <a className='header__link' href='#'>
+                    <a className='link' href='#'>
                         Log In
                     </a>
 

@@ -7,8 +7,14 @@
     display: flex;
     gap: 2rem;
 
+    @media (max-width: 1366px) {
+        margin-bottom: 80px;
+    }
+
     @media (max-width: 1024px) {
         flex-direction: column;
+        padding-top: 120px;
+        margin-bottom: 120px;
         gap: 7rem;
     }
 
@@ -21,12 +27,28 @@
         @media (max-width: 1600px) {
             margin-left: 5rem;
         }
+
+        @media (max-width: 1024px) {
+            margin: 0;
+            padding: 40px 80px;
+        }
+
+        @media (max-width: 768px) {
+            margin-left: 0;
+            padding: 0px 20px; 
+        }
     }
 
     &__buttons {
         display: flex;
         gap: 2rem;
         align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            margin-top: 60px;
+            gap: 1rem;
+        }
     }
 
     &__image {
@@ -39,36 +61,20 @@
             display: flex;
             justify-content: flex-end;
         }
+
+        @media (max-width: 768px) {
+
+        }
     }
 
-    &__title {
-        font-size: 85px;
-        line-height: 95px;
-        font-weight: 700;
-        color: #272d4e;
-    }
-
-    &__subtitle {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        max-width: 720px;
-        color: #94a2b3;
+    &__text {
         margin: 20px 0;
     }
 
     &__button {
-        margin: 10px 10px 0 0;
+        margin-top: 10px;
         width: 267px;
         height: 72px;
-        border-radius: 60px;
-        font-family: "Roboto";
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
     }
 
     &__link {
@@ -85,10 +91,6 @@
 
         a {
             margin-left: 10px;
-            text-decoration: none;
-            color: #299EF3;
-            font-weight: 700;
-            text-align: center;
         }
     }
 

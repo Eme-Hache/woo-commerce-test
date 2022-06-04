@@ -6,15 +6,15 @@ const Hero = () => {
     return (
         <main className='hero'>
             <div className='hero__content'>
-                <h1 className='hero__title'>
+                <h1 className='title title--principal'>
                     Building exactly the eCommerce website you want.
                 </h1>
-                <h2 className='hero__subtitle'>
+                <h2 className='text text--base hero__text'>
                     WooCommerce is a customizable, open-source eCommerce platform built on WordPress. Get started quickly and make your way.
                 </h2>
 
                 <div className='hero__buttons'>
-                    <button className='hero__button button button--purple'>
+                    <button className='hero__button button button--purple button--rounded'>
                         <span className='button__text'>
                             Start a New Store
                         </span>
@@ -22,7 +22,7 @@ const Hero = () => {
 
                     <span className='hero__link'>
                         or
-                        <a href='#'>
+                        <a className='link link--blue' href='#'>
                             Customize & Extend ›
                         </a>
                     </span>

@@ -9,7 +9,7 @@ import '../styles/components/features.scss'
 const Features = () => {
     return (
         <section className='features'>
-            <h1 className='features__maintitle'>Your eCommerce made simple</h1>
+            <h1 className='title title--secondary'>Your eCommerce made simple</h1>
 
             <div className='features__content'>
                 <article className='features__item features__item--up'>
@@ -21,15 +21,15 @@ const Features = () => {
                         </div>
                     </div>
 
-                    <h2 className='features__title'>
+                    <h2 className='title title--article'>
                         All You Need to Start
                     </h2>
 
-                    <p className='features__text'>
+                    <p className='text text--base features__text'>
                         Add WooCommerce plugin to any WordPress site and set up a new store in minutes.
                     </p>
 
-                    <a href='#' className='features__text features__text--link'>
+                    <a href='#' className='link link--blue features__text'>
                         Ecommerce for WordPress ›
                     </a>
                 </article>
@@ -43,15 +43,15 @@ const Features = () => {
                         </div>
                     </div>
 
-                    <h2 className='features__title'>
+                    <h2 className='title title--article'>
                         Customize and Extend
                     </h2>
 
-                    <p className='features__text'>
+                    <p className='text text--base features__text'>
                         From subscriptions to gym classes to luxury cars, WooCommerce is fully customizable.
                     </p>
 
-                    <a href='#' className='features__text features__text--link'>
+                    <a href='#' className='link link--blue features__text'>
                         Browse Extensions ›
                     </a>
                 </article>
@@ -65,15 +65,15 @@ const Features = () => {
                         </div>
                     </div>
 
-                    <h2 className='features__title'>
+                    <h2 className='title title--article'>
                         Active Community
                     </h2>
 
-                    <p className='features__text'>
+                    <p className='text text--base features__text'>
                         WooCommerce is one of the fastest-growing eCommerce communities.
                     </p>
 
-                    <a href='#' className='features__text features__text--link'>
+                    <a href='#' className='link link--blue features__text'>
                         Check our Forums ›
                     </a>
                 </article>
